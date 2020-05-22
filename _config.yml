@@ -1,42 +1,45 @@
-# Site settings
-title:          오픈소스 유광호
-description:    "Minimal Jekyll theme for storytellers"
-baseurl:
-url:            "https://github.com/605s/605s.github.io"
+title: Texture Theme
+author: GitHub User
+email: your-email@domain.com
+description: > # this means to ignore newlines until "show_exerpts:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+show_excerpts: true # set to true to show excerpts on the homepage
+baseurl: 
 
-remote_theme: chesterhow/tale
+remote_theme : thelehhman/texture
 
-# Google Analytics
-google_analytics: UA—XXXXXXXX-X
+# Minima date format
+# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
+sass:
+  sass_dir: _sass
 
-# Author
-author:
-  name:         605s
-  url:          https://github.com/605s/605s.github.io
+permalink: /posts/:title/
+texture:
+  title: Adam Denisov
+  tagline: Developer. Designer
+  date_format: "%b %-d, %Y"
+  style: black
+  showNav: false
+  showPicker: true
+
+  # generate social links in footer
+  social_links:
+    twitter: thelehhman
+    github:  thelehhman
+    linkedIn: in/thelehhman
+    rss: rss
+ 
+
+# If you want to link only specific pages in your header, uncomment
+# this and add the path to the pages in order as they should show up
+#header_pages:
+# - about.md
 
 # Build settings
-markdown:       kramdown
-include:
-  - _pages
+# theme: texture
 
-# Assets
-sass:
-  sass_dir:     _sass
-  style:        compressed
-
-# Gems
 plugins:
-  - jekyll-feed
-  - jekyll-paginate
   - jekyll-seo-tag
-  # - jemoji #Uncomment this to allow emoji in your post
-
-# Permalinks
-permalink:      /:year-:month-:day/:title
-paginate:       5
-
-# Excludes
-exclude: [ Gemfile, Gemfile.lock, tale.gemspec ]
-
-# Disqus (Set to your disqus id)
-disqus:         jekyll-tale
+#  - jekyll-feed
